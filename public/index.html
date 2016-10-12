@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-blue-grey.css">
+
+<link rel="stylesheet" type="text/css" href="semantic/out/semantic.min.css">
+<script src="semantic/out/semantic.min.js"></script>
+
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidenav"><br>
+  <div class="w3-container margin-left:300px">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="img_avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4 class="w3-padding-0"><b>PORTFOLIO</b></h4>
+    <p class="w3-text-grey">Template by W3.CSS</p>
+  </div>
+  <a href="#" class="w3-padding w3-text-teal">HOME</a>
+  <a href="#" class="w3-padding">ABOUT</a>
+  <a href="#" class="w3-padding">PORTFOLIO</a>
+  <a href="#" class="w3-padding">SHOP</a>
+  <a href="#" class="w3-padding">CONTACT</a>
+
+  <div class="w3-section w3-padding-top w3-large">
+    <a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-red w3-show-inline-block"><i class="fa fa-pinterest-p"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-light-blue w3-show-inline-block"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-grey w3-show-inline-block"><i class="fa fa-flickr"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-linkedin"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header class="w3-container">
+    <a href="#"><img src="img_avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <p>
+      <h1><b>Jacob Cross</b></h1>
+      <h4>Software Engineering Student</h4>
+      <h4>San Francisco, CA</h4>
+    </p>
+    <div class="w3-section">
+      <span class="w3-margin-right">Filter:</span>
+      <button class="w3-btn">ALL</button>
+      <button class="w3-btn w3-white"><i class="fa fa-diamond w3-margin-right"></i>Design</button>
+      <button class="w3-btn w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
+      <button class="w3-btn w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
+    </div>
+  </header>
+
+  <!-- First Photo Grid-->
+  <div class="w3-margin-left">
+    <div class="ui link cards">
+      <div class="card">
+        <div class="content">
+          <div class="header">AI-Driven News Analysis App</div>
+          <div class="meta">
+            <i class="cloud icon"></i>
+            <a href="https://github.com/JacobCross/newsie">github</a>
+          </div>
+          <div class="description">
+            Using IBM's Machine Learning 'AlchemyAPI' to analyze news articles and give an idea of what the news is discussing.
+          </div>
+        </div>
+        <div class="extra content">
+          <span>
+            <i class="lab icon"></i>
+            <a class="ui teal label">Python</a>
+            <a class="ui teal label">Machine Learning</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="content">
+          <div class="header">Portfolio Website</div>
+          <div class="meta">
+            <i class="cloud icon"></i>
+            <a href="https://github.com/JacobCross/portfolio-site">github</a>
+          </div>
+          <div class="description">
+            The site you are currently on was built by me using a few frameworks, core technologies tagged below.
+          </div>
+        </div>
+        <div class="extra content">
+          <span>
+            <i class="lab icon"></i>
+            <a class="ui teal label">JS</a>
+            <a class="ui teal label">NodeJS</a>
+            <a class="ui teal label">HTML/CSS</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="content">
+          <div class="header">QuickRegister</div>
+          <div class="meta">
+            <i class="cloud icon"></i>
+            <a href="https://github.com/JacobCross/quickregister/tree/master/FirstBlog1">github</a>
+          </div>
+          <div class="description">
+            Developed a Web Application for online high school registration.
+          </div>
+        </div>
+        <div class="extra content">
+          <span>
+            <i class="lab icon"></i>
+            <a class="ui teal label">Python</a>
+            <a class="ui teal label">Django</a>
+            <a class="ui teal label">MySQL</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-margin-bottom w3-margin-left">
+    <div class="ui link cards">
+      <div class="card">
+        <div class="content">
+          <div class="header">AI-Driven News Analysis App</div>
+          <div class="meta">
+            <i class="cloud icon"></i>
+            <a href="https://github.com/JacobCross/newsie">github</a>
+          </div>
+          <div class="description">
+            Using IBM's Machine Learning 'AlchemyAPI' to analyze news articles and give an idea of what the news is discussing.
+          </div>
+        </div>
+        <div class="extra content">
+          <span>
+            <i class="lab icon"></i>
+            <a class="ui teal label">Python</a>
+            <a class="ui teal label">Machine Learning</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="content">
+          <div class="header">AI-Driven News Analysis App</div>
+          <div class="meta">
+            <i class="cloud icon"></i>
+            <a href="https://github.com/JacobCross/newsie">github</a>
+          </div>
+          <div class="description">
+            Using IBM's Machine Learning 'AlchemyAPI' to analyze news articles and give an idea of what the news is discussing.
+          </div>
+        </div>
+        <div class="extra content">
+          <span>
+            <i class="lab icon"></i>
+            <a class="ui teal label">Python</a>
+            <a class="ui teal label">Machine Learning</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="content">
+          <div class="header">AI-Driven News Analysis App</div>
+          <div class="meta">
+            <i class="cloud icon"></i>
+            <a href="https://github.com/JacobCross/newsie">github</a>
+          </div>
+          <div class="description">
+            Using IBM's Machine Learning 'AlchemyAPI' to analyze news articles and give an idea of what the news is discussing.
+          </div>
+        </div>
+        <div class="extra content">
+          <span>
+            <i class="lab icon"></i>
+            <a class="ui teal label">Python</a>
+            <a class="ui teal label">Machine Learning</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Pagination -->
+
+
+  </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
